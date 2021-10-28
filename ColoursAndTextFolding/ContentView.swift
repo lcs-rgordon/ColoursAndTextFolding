@@ -24,6 +24,7 @@ struct ContentView: View {
                 
                 Spacer()
                 
+                // When a Text view is given a simple string, it cannot be code-folded.
                 Text("The quick brown fox jumped over the lazy dog.")
                 
                 Spacer()
@@ -35,6 +36,7 @@ struct ContentView: View {
                 
                 Spacer()
                 
+                // When a Text view is given a multi-line string, delimited by """ at the start and end, it can be code-folded.
                 Text("""
                 The quick brown
                 fox jumped over
