@@ -9,8 +9,38 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+
+            Color.yellow
+            
+            VStack {
+                Spacer()
+                
+                // Semi-transparent purple
+                Text("Hello")
+                    .padding()
+                    .background(Color("Transparent Purple"))
+                
+                Spacer()
+                
+                // Opaque green
+                Text("Hello")
+                    .padding()
+                    .background(Color(hue: 120.0/360.0, saturation: 0.80, brightness: 0.70, opacity: 1.0))
+                
+                Spacer()
+
+                // Semi-transparent green
+                Text("Hello")
+                    .padding()
+                    .background(Color(hue: 120.0/360.0, saturation: 0.80, brightness: 0.70, opacity: 0.50))
+                
+                Spacer()
+
+            }
+            
+        }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
