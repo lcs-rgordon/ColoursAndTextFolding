@@ -14,6 +14,7 @@ struct ContentView: View {
             Color.yellow
             
             VStack {
+                
                 Spacer()
                 
                 // Semi-transparent purple
@@ -23,10 +24,22 @@ struct ContentView: View {
                 
                 Spacer()
                 
+                Text("The quick brown fox jumped over the lazy dog.")
+                
+                Spacer()
+                
                 // Opaque green
                 Text("Hello")
                     .padding()
                     .background(Color(hue: 120.0/360.0, saturation: 0.80, brightness: 0.70, opacity: 1.0))
+                
+                Spacer()
+                
+                Text("""
+                The quick brown
+                fox jumped over
+                the lazy dog.
+                """)
                 
                 Spacer()
 
@@ -35,8 +48,6 @@ struct ContentView: View {
                     .padding()
                     .background(Color(hue: 120.0/360.0, saturation: 0.80, brightness: 0.70, opacity: 0.50))
                 
-                Spacer()
-
             }
             
         }
